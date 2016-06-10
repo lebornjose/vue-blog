@@ -12,6 +12,7 @@ Vue.use(VueRouter)
 Vue.use(VueResource)
 
 var router = new VueRouter()
+Vue.http.options.emulateJSON = true
 /* eslint-disable no-new */
 
 router.map({

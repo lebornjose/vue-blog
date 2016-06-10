@@ -13,6 +13,6 @@ module.exports = {
   dev: {
     env: require('./dev.env'),
     port: 8000,
-    proxyTable: {}
+    proxyTable: {'/blog':'http://www.leborn.me'}
   }
 }
