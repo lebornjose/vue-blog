@@ -8,6 +8,10 @@ import cat from './cat.vue'
 import guest from './guest.vue'
 import product from './product.vue'
 
+Vue.filter('date', function (value) {
+  return new Date(parseInt(value.pubtime) * 1000).toLocaleString().substr(0, 9)
+})
+
 Vue.use(VueRouter)
 Vue.use(VueResource)
 

@@ -15,71 +15,11 @@
             <input type="text" placeholder="搜索" class="search-query">
           </form>
         </div>
-        <ul class="x-list" id="J_list">
+        <ul class="x-list" id="J_list" v-for="quote in quotes">
           <li class="clearfix">
-            <article><a href="detail.html" class="title">男女交往最忌讳的是什么</a>
-              <div class="content">男女交往忌讳一个字：贪。 什么都想要，想要的东西还都恰恰相反。 姑娘们沐浴着爱情的幸福阳光，心中却长存淡淡的嫌弃。 嫌风趣幽默年轻俊美的小伙子周围姑娘太多，嫌老实忠厚没异性缘的太不解风情。 有钱的太老，年轻的太穷，找到一个年轻又有钱的二代小开，又嫌人家少爷脾气你伺候不来。 爱你的你觉得是缰绳是束缚，董...</div>
-              <div class="article-info"><span><i class="icon-calendar"> </i>2015/03/19</span><span><i class="icon-book"> </i>停不下来思考</span><span><i class="icon-comments-alt"> </i>10</span><span><i class="icon-heart-empty"> </i>12</span></div>
-            </article>
-          </li>
-          <li class="clearfix">
-            <article><a href="detail.html" class="title">男女交往最忌讳的是什么</a>
-              <div class="content">男女交往忌讳一个字：贪。 什么都想要，想要的东西还都恰恰相反。 姑娘们沐浴着爱情的幸福阳光，心中却长存淡淡的嫌弃。 嫌风趣幽默年轻俊美的小伙子周围姑娘太多，嫌老实忠厚没异性缘的太不解风情。 有钱的太老，年轻的太穷，找到一个年轻又有钱的二代小开，又嫌人家少爷脾气你伺候不来。 爱你的你觉得是缰绳是束缚，董...</div>
-              <div class="article-info"><span><i class="icon-calendar"> </i>2015/03/19</span><span><i class="icon-book"> </i>停不下来思考</span><span><i class="icon-comments-alt"> </i>10</span><span><i class="icon-heart-empty"> </i>12</span></div>
-            </article>
-          </li>
-          <li class="clearfix">
-            <article><a href="detail.html" class="title">男女交往最忌讳的是什么</a>
-              <div class="content">男女交往忌讳一个字：贪。 什么都想要，想要的东西还都恰恰相反。 姑娘们沐浴着爱情的幸福阳光，心中却长存淡淡的嫌弃。 嫌风趣幽默年轻俊美的小伙子周围姑娘太多，嫌老实忠厚没异性缘的太不解风情。 有钱的太老，年轻的太穷，找到一个年轻又有钱的二代小开，又嫌人家少爷脾气你伺候不来。 爱你的你觉得是缰绳是束缚，董...</div>
-              <div class="article-info"><span><i class="icon-calendar"> </i>2015/03/19</span><span><i class="icon-book"> </i>停不下来思考</span><span><i class="icon-comments-alt"> </i>10</span><span><i class="icon-heart-empty"> </i>12</span></div>
-            </article>
-          </li>
-          <li class="clearfix">
-            <article><a href="detail.html" class="title">男女交往最忌讳的是什么</a>
-              <div class="content">男女交往忌讳一个字：贪。 什么都想要，想要的东西还都恰恰相反。 姑娘们沐浴着爱情的幸福阳光，心中却长存淡淡的嫌弃。 嫌风趣幽默年轻俊美的小伙子周围姑娘太多，嫌老实忠厚没异性缘的太不解风情。 有钱的太老，年轻的太穷，找到一个年轻又有钱的二代小开，又嫌人家少爷脾气你伺候不来。 爱你的你觉得是缰绳是束缚，董...</div>
-              <div class="article-info"><span><i class="icon-calendar"> </i>2015/03/19</span><span><i class="icon-book"> </i>停不下来思考</span><span><i class="icon-comments-alt"> </i>10</span><span><i class="icon-heart-empty"> </i>12</span></div>
-            </article>
-          </li>
-          <li class="clearfix">
-            <article><a href="detail.html" class="title">男女交往最忌讳的是什么</a>
-              <div class="content">男女交往忌讳一个字：贪。 什么都想要，想要的东西还都恰恰相反。 姑娘们沐浴着爱情的幸福阳光，心中却长存淡淡的嫌弃。 嫌风趣幽默年轻俊美的小伙子周围姑娘太多，嫌老实忠厚没异性缘的太不解风情。 有钱的太老，年轻的太穷，找到一个年轻又有钱的二代小开，又嫌人家少爷脾气你伺候不来。 爱你的你觉得是缰绳是束缚，董...</div>
-              <div class="article-info"><span><i class="icon-calendar"> </i>2015/03/19</span><span><i class="icon-book"> </i>停不下来思考</span><span><i class="icon-comments-alt"> </i>10</span><span><i class="icon-heart-empty"> </i>12</span></div>
-            </article>
-          </li>
-          <li class="clearfix">
-            <article><a href="detail.html" class="title">男女交往最忌讳的是什么</a>
-              <div class="content">男女交往忌讳一个字：贪。 什么都想要，想要的东西还都恰恰相反。 姑娘们沐浴着爱情的幸福阳光，心中却长存淡淡的嫌弃。 嫌风趣幽默年轻俊美的小伙子周围姑娘太多，嫌老实忠厚没异性缘的太不解风情。 有钱的太老，年轻的太穷，找到一个年轻又有钱的二代小开，又嫌人家少爷脾气你伺候不来。 爱你的你觉得是缰绳是束缚，董...</div>
-              <div class="article-info"><span><i class="icon-calendar"> </i>2015/03/19</span><span><i class="icon-book"> </i>停不下来思考</span><span><i class="icon-comments-alt"> </i>10</span><span><i class="icon-heart-empty"> </i>12</span></div>
-            </article>
-          </li>
-          <li class="clearfix">
-            <article><a href="detail.html" class="title">男女交往最忌讳的是什么</a>
-              <div class="content">男女交往忌讳一个字：贪。 什么都想要，想要的东西还都恰恰相反。 姑娘们沐浴着爱情的幸福阳光，心中却长存淡淡的嫌弃。 嫌风趣幽默年轻俊美的小伙子周围姑娘太多，嫌老实忠厚没异性缘的太不解风情。 有钱的太老，年轻的太穷，找到一个年轻又有钱的二代小开，又嫌人家少爷脾气你伺候不来。 爱你的你觉得是缰绳是束缚，董...</div>
-              <div class="article-info"><span><i class="icon-calendar"> </i>2015/03/19</span><span><i class="icon-book"> </i>停不下来思考</span><span><i class="icon-comments-alt"> </i>10</span><span><i class="icon-heart-empty"> </i>12</span></div>
-            </article>
-          </li>
-          <li class="clearfix">
-            <article><a href="detail.html" class="title">男女交往最忌讳的是什么</a>
-              <div class="content">男女交往忌讳一个字：贪。 什么都想要，想要的东西还都恰恰相反。 姑娘们沐浴着爱情的幸福阳光，心中却长存淡淡的嫌弃。 嫌风趣幽默年轻俊美的小伙子周围姑娘太多，嫌老实忠厚没异性缘的太不解风情。 有钱的太老，年轻的太穷，找到一个年轻又有钱的二代小开，又嫌人家少爷脾气你伺候不来。 爱你的你觉得是缰绳是束缚，董...</div>
-              <div class="article-info"><span><i class="icon-calendar"> </i>2015/03/19</span><span><i class="icon-book"> </i>停不下来思考</span><span><i class="icon-comments-alt"> </i>10</span><span><i class="icon-heart-empty"> </i>12</span></div>
-            </article>
-          </li>
-          <li class="clearfix">
-            <article><a href="detail.html" class="title">男女交往最忌讳的是什么</a>
-              <div class="content">男女交往忌讳一个字：贪。 什么都想要，想要的东西还都恰恰相反。 姑娘们沐浴着爱情的幸福阳光，心中却长存淡淡的嫌弃。 嫌风趣幽默年轻俊美的小伙子周围姑娘太多，嫌老实忠厚没异性缘的太不解风情。 有钱的太老，年轻的太穷，找到一个年轻又有钱的二代小开，又嫌人家少爷脾气你伺候不来。 爱你的你觉得是缰绳是束缚，董...</div>
-              <div class="article-info"><span><i class="icon-calendar"> </i>2015/03/19</span><span><i class="icon-book"> </i>停不下来思考</span><span><i class="icon-comments-alt"> </i>10</span><span><i class="icon-heart-empty"> </i>12</span></div>
-            </article>
-          </li>
-          <li class="clearfix">
-            <article><a href="detail.html" class="title">男女交往最忌讳的是什么</a>
-              <div class="content">男女交往忌讳一个字：贪。 什么都想要，想要的东西还都恰恰相反。 姑娘们沐浴着爱情的幸福阳光，心中却长存淡淡的嫌弃。 嫌风趣幽默年轻俊美的小伙子周围姑娘太多，嫌老实忠厚没异性缘的太不解风情。 有钱的太老，年轻的太穷，找到一个年轻又有钱的二代小开，又嫌人家少爷脾气你伺候不来。 爱你的你觉得是缰绳是束缚，董...</div>
-              <div class="article-info"><span><i class="icon-calendar"> </i>2015/03/19</span><span><i class="icon-book"> </i>停不下来思考</span><span><i class="icon-comments-alt"> </i>10</span><span><i class="icon-heart-empty"> </i>12</span></div>
-            </article>
-          </li>
-          <li class="clearfix">
-            <article><a href="detail.html" class="title">男女交往最忌讳的是什么</a>
-              <div class="content">男女交往忌讳一个字：贪。 什么都想要，想要的东西还都恰恰相反。 姑娘们沐浴着爱情的幸福阳光，心中却长存淡淡的嫌弃。 嫌风趣幽默年轻俊美的小伙子周围姑娘太多，嫌老实忠厚没异性缘的太不解风情。 有钱的太老，年轻的太穷，找到一个年轻又有钱的二代小开，又嫌人家少爷脾气你伺候不来。 爱你的你觉得是缰绳是束缚，董...</div>
-              <div class="article-info"><span><i class="icon-calendar"> </i>2015/03/19</span><span><i class="icon-book"> </i>停不下来思考</span><span><i class="icon-comments-alt"> </i>10</span><span><i class="icon-heart-empty"> </i>12</span></div>
+            <article><a href="detail.html" class="title">{{quote.title}}</a>
+              <div class="content">{{quote.summary}}</div>
+              <div class="article-info"><span><i class="icon-calendar"> </i>{{quote | date}}</span><span><i class="icon-book"> </i>{{quote.keyword}}</span><span><i class="icon-comments-alt"> </i>{{quote.reads}}</span><span><i class="icon-heart-empty"> </i>{{quote.ispost}}</span></div>
             </article>
           </li>
         </ul>
@@ -94,14 +34,14 @@
 export default {
   data () {
     return {
-      quote: ''
+      quotes: ''
     }
   },
   ready: function () {
     this.$http.get('http://127.0.0.1:8000/blog/home/page').then(function (response) {
-      console.log('11')
+      this.quotes = response.data
     }, function (response) {
-      console.log('222')
+      console.log(response.data)
     })
   }
 }
