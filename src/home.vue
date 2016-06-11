@@ -19,7 +19,7 @@
           <li class="clearfix">
             <article><a href="detail.html" class="title">{{quote.title}}</a>
               <div class="content">{{quote.summary}}</div>
-              <div class="article-info"><span><i class="icon-calendar"> </i>{{quote | date}}</span><span><i class="icon-book"> </i>{{quote.keyword}}</span><span><i class="icon-comments-alt"> </i>{{quote.reads}}</span><span><i class="icon-heart-empty"> </i>{{quote.ispost}}</span></div>
+              <div class="article-info"><span><i class="icon-calendar"> </i>{{quote | date}}</span><span><i class="icon-book"> </i>{{quote.keyworwd}}</span><span><i class="icon-comments-alt"> </i>{{quote.reads}}</span><span><i class="icon-heart-empty"> </i>{{quote.ispost}}</span></div>
             </article>
           </li>
         </ul>
