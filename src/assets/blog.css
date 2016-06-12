@@ -2498,6 +2498,7 @@ ul.left li, ol.left li, dl.left dt, dl.left dd {
       width: 500px; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/huangxing\/projects\/blog\/xingblog\/dev\/sass\/page\/product\.scss}line{font-family:\0000319}}
     .x-pro-content dl .title {
+      line-height: 30px;
       font-size: 1.4em;
       font-weight: bold; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/huangxing\/projects\/blog\/xingblog\/dev\/sass\/page\/product\.scss}line{font-family:\0000323}}
@@ -2506,12 +2507,14 @@ ul.left li, ol.left li, dl.left dt, dl.left dd {
         color: #e17967; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/huangxing\/projects\/blog\/xingblog\/dev\/sass\/page\/product\.scss}line{font-family:\0000329}}
     .x-pro-content dl .content {
+      line-height: 25px;
       text-indent: 2em; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/huangxing\/projects\/blog\/xingblog\/dev\/sass\/page\/product\.scss}line{font-family:\0000330}}
     .x-pro-content dl i {
       margin-right: 5px; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/huangxing\/projects\/blog\/xingblog\/dev\/sass\/page\/product\.scss}line{font-family:\0000331}}
     .x-pro-content dl .info {
+      line-height: 30px;
       color: #999; }
 
 @media screen and (max-width: 768px) {

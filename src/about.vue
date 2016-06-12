@@ -2,7 +2,7 @@
     <div class="x-about-content">
       <h2>{{about.title}}</h2>
       <article> 
-        {{{about.content}}}   <!-- 绑定html元素要  {{{}}} -->
+        {{{about.content}}}   <!-- 绑定html元素要  {{{}}} cat4ssx-->
       </article>
     </div>
     <Foot1></Foot1>
