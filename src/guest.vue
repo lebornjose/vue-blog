@@ -1,4 +1,5 @@
 <template>
+  <script type="text/javascript" src="./static/js/guest.js"></script>
   <div class="x-guest-content">
     <div class="article">
       <h1>留言板</h1>
@@ -14,7 +15,7 @@
 import Foot from './components/Foot1'
 export default{
   components: {
-    Foot
+    Foot: Foot
   }
 }
 </script>

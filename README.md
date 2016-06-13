@@ -38,4 +38,6 @@ For detailed explanation on how things work, checkout the [guide](http://vuejs-t
 
 + 关于我    /blog/home/jsonAbout 
 
++ 文章详情  /blog/home/jsonDetail/?id
+
 ### 接口暂时就写这么多吧
