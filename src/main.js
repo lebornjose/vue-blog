@@ -31,21 +31,27 @@ Vue.http.options.emulateJSON = true
 
 router.map({
   '/home': {
+    name: 'home',
     component: home
   },
   '/about': {
+    name: 'about',
     component: about
   },
   '/cat': {
+    name: 'cat',
     component: cat
   },
   '/guest': {
+    name: 'guest',
     component: guest
   },
   '/product': {
+    name: 'product',
     component: product
   },
   '/detail/:articleId': {
+    name: 'detail',
     component: detail
   }
 })

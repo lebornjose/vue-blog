@@ -17,10 +17,16 @@
       <div class="cube2"></div>
     </div>
     <div class="content">
-      <router-view></router-view>
+      <router-view transition="fade" transition-mode="out-in"></router-view>
     </div>
   </div>
 </template>
 <style>
 @import url('./assets/blog.css');
+.fade-transition {
+  transition: opacity .5s ease;
+}
+.fade-enter, .fade-leave {
+  opacity: 0;
+}
 </style>
