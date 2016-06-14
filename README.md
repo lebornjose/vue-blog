@@ -54,4 +54,8 @@ For detailed explanation on how things work, checkout the [guide](http://vuejs-t
 
 > 3. 图片轮换功能没做，
 
-> 考虑重新优化一下接口
+> 4. 考虑重新优化一下接口
+
+> 5. 页面过渡动画
+
+> 6. 结构配置调整

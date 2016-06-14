@@ -17,7 +17,7 @@
       <div class="cube2"></div>
     </div>
     <div class="content">
-      <router-view transition="fade" transition-mode="out-in"></router-view>
+      <router-view></router-view>
     </div>
   </div>
 </template>
