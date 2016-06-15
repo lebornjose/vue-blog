@@ -1,16 +1,18 @@
 <template>
-  <div class="x-about-content">
-    <h2>{{article.title}}</h2>
-    <article>
-     {{{detail.content}}}
-    </article>
-    <div class="single-footer">
-      <div class="prev-next"><a v-if="perv !=null " v-link="{ path: '/detail/'+perv.articleId }" class="before"> <i class="icon-arrow-left"></i>上一篇: </a><a v-if="next !=null" v-link="{ path: '/detail/'+perv.articleId }" >{{perv.title}}</a><a v-if="next !=null " title="MySQL字段数据类型" class="after">下一篇: </a><a v-if="next !=null " v-link="{ path: '/detail/'+next.articleId }" class="next">{{next.title}}</a><i v-if="next !=null " class="icon-arrow-right"></i></div>
+  <div class="content">
+    <div class="x-about-content">
+      <h2>{{article.title}}</h2>
+      <article>
+       {{{detail.content}}}
+      </article>
+      <div class="single-footer">
+        <div class="prev-next"><a v-if="perv !=null " v-link="{ path: '/detail/'+perv.articleId }" class="before"> <i class="icon-arrow-left"></i>上一篇: </a><a v-if="next !=null" v-link="{ path: '/detail/'+perv.articleId }" >{{perv.title}}</a><a v-if="next !=null " title="MySQL字段数据类型" class="after">下一篇: </a><a v-if="next !=null " v-link="{ path: '/detail/'+next.articleId }" class="next">{{next.title}}</a><i v-if="next !=null " class="icon-arrow-right"></i></div>
+      </div>
+      <div data-thread-key="1232423" data-title="留言板" data-url="http://leborn.me/" class="ds-thread">
+      </div>
     </div>
-    <div data-thread-key="1232423" data-title="留言板" data-url="http://leborn.me/" class="ds-thread">
-    </div>
+    <Foot></Foot>
   </div>
-  <Foot></Foot>
 </template>
 <script>
 import Foot from './components/Foot1'

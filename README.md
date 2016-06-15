@@ -61,3 +61,11 @@ For detailed explanation on how things work, checkout the [guide](http://vuejs-t
 > 6. 结构配置调整
 
 > 7. 多说的留言功能没调通
+
+<s>  8. transition 页面过渡有bug </s>
+
+> 9. 搜索功能
+
+> 10. 文章类目功能
+
+> 11. 拓展功能  (音乐播放器)

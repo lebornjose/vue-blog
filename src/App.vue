@@ -16,20 +16,24 @@
       <div class="cube1"></div>
       <div class="cube2"></div>
     </div>
-    <div class="content">
-      <router-view></router-view>
-    </div>
+      <router-view class="view" transition="test" transition-mode="out-in" keep-alive></router-view>
   </div>
 </template>
 <style>
 @import url('./assets/blog.css');
-.fade-transition {
-  transition: opacity .5s ease;
+.view {
+  transition: all .5s ease;
 }
-.fade-enter, .fade-leave {
+.test-enter, .test-leave {
   opacity: 0;
+  transform: translate3d(20px, 0, 0);
 }
-.own-active{
-  background: #e17967;
+[v-cloak] {
+  display: none;
 }
 </style>
+<script>
+export default {
+  props: ['homeTag', 'aboutTag', 'catTag', 'guestTag', 'productTag', 'detailTag']
+}
+</script>
