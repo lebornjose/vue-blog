@@ -59,3 +59,5 @@ For detailed explanation on how things work, checkout the [guide](http://vuejs-t
 > 5. 页面过渡动画
 
 > 6. 结构配置调整
+
+> 7. 多说的留言功能没调通
