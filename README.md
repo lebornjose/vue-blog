@@ -50,13 +50,13 @@ For detailed explanation on how things work, checkout the [guide](http://vuejs-t
 
 > 1. 网站的跨域问题虽然解决了，但是，因为本地转移到服务器端口更换导致 有bug
 
-> 2. 置顶功能还没做，
+<s> 2. 置顶功能还没做，</s>
 
 > 3. 图片轮换功能没做，
 
 > 4. 考虑重新优化一下接口
 
-> 5. 页面过渡动画
+<s>  5. 页面过渡动画 </s>
 
 > 6. 结构配置调整
 
