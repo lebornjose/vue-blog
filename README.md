@@ -52,7 +52,7 @@ For detailed explanation on how things work, checkout the [guide](http://vuejs-t
 
 <s> 2. 置顶功能还没做，</s>
 
-> 3. 图片轮换功能没做，
+<s> 3. 图片轮换功能没做，</s>
 
 > 4. 考虑重新优化一下接口
 
@@ -60,7 +60,7 @@ For detailed explanation on how things work, checkout the [guide](http://vuejs-t
 
 > 6. 结构配置调整
 
-> 7. 多说的留言功能没调通
+<s> 7. 多说的留言功能没调通 </s>
 
 <s>  8. transition 页面过渡有bug </s>
 

@@ -84,6 +84,11 @@ export default {
     }, function (response) {
       console.log(response.data)
     })
+    var week = function () {
+      var week = new Date().getDay()
+      $('.cover-img').css('background-image', 'url(http://xinblog.oss-cn-qingdao.aliyuncs.com/' + week + '.jpg)')
+    }
+    week()
     $('.go-top').click(function () {
       $('body,html').animate({
         scrollTop: 0

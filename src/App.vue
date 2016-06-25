@@ -1,7 +1,7 @@
 <template>
   <div class="x-qaq"><a href="index.html" class="cd">兴</a></div>
     <div class="x-nvabar x-nvabar-jianshu expanded">
-      <div class="dropdown"><a v-link="{path: '／home'}" title="Super xing" class="active logo"><b>兴</b></a></div>
+      <div class="dropdown"><a v-link="{ path: '/home'}" title="Super xing" class="active logo"><b>兴</b></a></div>
       <div class="x-menu">
         <ul class="items">
           <li class="menu-items-type"><a v-link="{ path: '/about',activeClass: 'own-active'}" title="关于Super xing"><i class="icon-group"></i></a></li>
@@ -33,6 +33,7 @@
 }
 .own-active{
   background: #e17967;
+  color: #fff!important;
 }
 </style>
 <script>
