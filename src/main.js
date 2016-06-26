@@ -8,6 +8,7 @@ import cat from './cat.vue'
 import guest from './guest.vue'
 import product from './product.vue'
 import detail from './detail.vue'
+import list from './list.vue'
 
 Vue.filter('date', function (value) {
   return new Date(parseInt(value.pubtime) * 1000).toLocaleString().substr(0, 9)
@@ -53,6 +54,10 @@ router.map({
   '/detail/:articleId': {
     name: 'detail',
     component: detail
+  },
+  '/list/:categoryId': {
+    name: 'list',
+    component: list
   }
 })
 

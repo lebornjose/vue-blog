@@ -66,6 +66,6 @@ For detailed explanation on how things work, checkout the [guide](http://vuejs-t
 
 > 9. 搜索功能
 
-> 10. 文章类目功能
+<s> 10. 文章类目功能 </s>
 
 > 11. 拓展功能  (音乐播放器)
