@@ -3,7 +3,7 @@ var express = require('express')
 var webpack = require('webpack')
 var config = require('../config')
 var proxyMiddleware = require('http-proxy-middleware')
-<<<<<<< HEAD
+
 var webpackConfig = require('./webpack.prod.conf')
 // var webpackConfig = process.env.NODE_ENV === 'testing'
 
