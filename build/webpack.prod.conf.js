@@ -58,11 +58,11 @@ module.exports = merge(baseWebpackConfig, {
       // necessary to consistently work with multiple chunks via CommonsChunkPlugin
       chunksSortMode: 'dependency'
     }),
-    new HtmlWebpackPlugin({
-      filename: 'music.html',
+     new HtmlWebpackPlugin({
       template: 'music.html',
-      inject: true
-    })
+      filename: 'music.html',
+      inject: true,
+    }),
     // split vendor js into its own file
     new webpack.optimize.CommonsChunkPlugin({
       name: 'vendor',
