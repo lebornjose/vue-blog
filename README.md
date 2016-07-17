@@ -42,6 +42,8 @@ For detailed explanation on how things work, checkout the [guide](http://vuejs-t
 
 + 文章详情  /blog/home/jsonDetail/?id
 
++ 搜索接口  /http://www.leborn.me/blog/home/jsonSearch/keyword
+
 ### 接口暂时就写这么多吧
 
 程序部署通过 forever  部署完成， 域名    http://112.74.95.7:3000/#!/home

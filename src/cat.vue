@@ -21,7 +21,7 @@ export default{
     }
   },
   ready: function () {
-    this.$http.get('http://127.0.0.1:8000/blog/home/jsonCategory').then(function (response) {
+    this.$http.get('/blog/home/jsonCategory').then(function (response) {
       this.catList = response.data
       console.log(response.data)
     }, function (response) {

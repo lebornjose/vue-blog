@@ -23,7 +23,7 @@ export default{
   route: {
     data: function () {
       var categoryId = this.$route.params.categoryId
-      this.$http.get('http://127.0.0.1:8000/blog/home/jsonList/' + categoryId + '').then(function (response) {
+      this.$http.get('／blog/home/jsonList/' + categoryId + '').then(function (response) {
         this.articleList = response.data
         console.log(response.data)
       }, function (response) {

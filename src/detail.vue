@@ -14,7 +14,13 @@
     <Foot></Foot>
   </div>
 </template>
+<style>
+  a{
+    cursor: pointer;
+  }
+</style>
 <script>
+import $ from 'jquery'
 import Foot from './components/Foot1'
 export default{
   components: {
@@ -30,17 +36,21 @@ export default{
   },
   route: {
     data: function () {
+      $('body,html').animate({
+        scrollTop: 0
+      }, 400)
       var articleId = this.$route.params.articleId
-      this.$http.get('http://127.0.0.1:8000/blog/home/jsonDetail/' + articleId + '').then(function (response) {
+      this.$http.get('/blog/home/jsonDetail/' + articleId + '').then(function (response) {
         this.article = response.data.article[0]
         this.detail = response.data.detailVO
         this.perv = response.data.article[1]
         this.next = response.data.article[2]
-        console.log(response.data.article[2])
       }, function (response) {
         console.log(response.data.article)
       })
     }
+  },
+  ready: function () {
   }
 }
 </script>

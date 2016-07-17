@@ -24,7 +24,7 @@ export default{
     }
   },
   ready: function () {
-    this.$http.get('http://127.0.0.1:8000/blog/home/jsonAbout/1504202124283691142').then(function (response) {
+    this.$http.get('/blog/home/jsonAbout/1504202124283691142').then(function (response) {
       this.about = response.data
       console.log(response.data)
     }, function (response) {

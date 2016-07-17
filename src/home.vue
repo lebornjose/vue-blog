@@ -11,13 +11,13 @@
     <div class="right-aside">
       <div class="x-page-title">
         <h5 class="title">梦想永远是现代式，而绝非将来式。</h5>
-        <form id="" method="" action="" class="search-form">
+        <div class="search-form">
           <input type="text" placeholder="搜索" class="search-query">
-        </form>
+        </div>
       </div>
       <ul class="x-list" id="J_list" v-for="quote in quotes">
         <li class="clearfix">
-          <article><a v-link="{ path: '/detail/'+quote.articleId}" class="title">{{quote.title}}</a>
+          <article><a @click="golist(quote.articleId)" class="title">{{quote.title}}</a>
             <div class="content">{{quote.summary}}</div>
             <div class="article-info"><span><i class="icon-calendar"> </i>{{quote | date}}</span><span><i class="icon-book"> </i>{{quote.keyworwd}}</span><span><i class="icon-comments-alt"> </i>{{quote.reads}}</span><span><i class="icon-heart-empty"> </i>{{quote.ispost}}</span></div>
           </article>
@@ -34,6 +34,18 @@
 <style>
 .x-page a{
   cursor: pointer;
+}
+.expand-transition {
+  transition: all .3s ease;
+  height: 30px;
+  padding: 10px;
+  background-color: #eee;
+  overflow: hidden;
+}
+.expand-enter, .expand-leave {
+  height: 0;
+  padding: 0 10px;
+  opacity: 0;
 }
 </style>
 <script>
@@ -58,12 +70,13 @@ export default {
     return {
       quotes: '',
       index: 0,
-      alert: false
+      alert: false,
+      v_search: ''
     }
   },
   methods: {
     onClick: function () {
-      this.$http.get('http://127.0.0.1:8000/blog/home/page/' + this.index).then(function (response) {
+      this.$http.get('/blog/home/page/' + this.index).then(function (response) {
         if (response.data.length > 0) {
           this.quotes = this.quotes.concat(response.data)
           this.index++
@@ -76,10 +89,14 @@ export default {
       }, function (response) {
         console.log(response.data)
       })
+    },
+    golist: function (id) {
+      this.$route.router.go({ path: '/detail/' + id })
     }
   },
   ready: function () {
-    this.$http.get('http://127.0.0.1:8000/blog/home/page').then(function (response) {
+    var self = this
+    self.$http.get('/blog/home/page').then(function (response) {
       this.quotes = response.data
     }, function (response) {
       console.log(response.data)
@@ -93,6 +110,14 @@ export default {
       $('body,html').animate({
         scrollTop: 0
       }, 400)
+    })
+    $('.search-query').bind('keypress', function (event) {
+      if (event.keyCode === 13) {
+        var keyword = $(this).val()
+        self.$http.get('/blog/home/jsonSearch/' + keyword).then(function (response) {
+          this.quotes = response.data
+        })
+      }
     })
   }
 }
