@@ -3,7 +3,7 @@
     <div class="x-pro-content" v-for="product in productList">
       <dl class="left">
         <dt><img v-bind:src="product.commendId | photo" alt="Kooteam办公" title="办公也扮酷"></dt>
-        <dd class="title"><a href="#" target="_blank">{{product.title}}</a></dd>
+        <dd class="title"><a href="{{product.url}}" target="_blank">{{product.title}}</a></dd>
         <dd class="content">{{product.describe}}</dd>
         <dd class="info"><i class="icon-dropbox"></i>{{product.note}}</dd>
       </dl>

@@ -18,7 +18,7 @@
       <ul class="x-list" id="J_list" v-for="quote in quotes">
         <li class="clearfix">
           <article><a @click="golist(quote.articleId)" class="title">{{quote.title}}</a>
-            <div class="content">{{quote.summary}}</div>
+            <div class="content"> {{quote.summary}}</div>
             <div class="article-info"><span><i class="icon-calendar"> </i>{{quote | date}}</span><span><i class="icon-book"> </i>{{quote.keyworwd}}</span><span><i class="icon-comments-alt"> </i>{{quote.reads}}</span><span><i class="icon-heart-empty"> </i>{{quote.ispost}}</span></div>
           </article>
         </li>
