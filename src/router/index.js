@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import Router from 'vue-router';
+import Router from 'vue-router'
 import home from '../home.vue'
 // import about from '../about.vue'
 // import cat from '../cat.vue'
@@ -10,17 +10,17 @@ import home from '../home.vue'
 Vue.use(Router)
 
 export default new Router({
-	routes: [
-		{
-		  path: '/',
-			redirect: {
-				path: '/home',
+  routes: [
+    {
+      path: '/',
+      redirect: {
+        path: '/home'
       }
     },
     {
-    	path: '/home',
-			name: 'home',
-    	component: home
+      path: '/home',
+      name: 'home',
+      component: home
     }
-	]
+  ]
 })
