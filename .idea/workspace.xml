@@ -3,9 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="a1cccc80-3790-4a8d-bdd2-a0a980882752" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/model.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/model.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/about.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/about.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cat.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/cat.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/detail.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/detail.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/guest.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/guest.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/home.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/list.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/list.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/product.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/product.vue" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -80,7 +84,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1581769653285</updated>
-      <workItem from="1581769655925" duration="3223000" />
+      <workItem from="1581769655925" duration="4034000" />
     </task>
     <servers />
   </component>

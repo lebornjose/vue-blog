@@ -15,7 +15,7 @@
           <input type="text" placeholder="搜索" class="search-query">
         </div>
       </div>
-      <ul class="x-list" id="J_list" v-for="quote in quotes">
+      <ul class="x-list" id="J_list" v-for="quote in quotes" :key="quote.articleId">
         <li class="clearfix">
           <article><a @click="golist(quote.articleId)" class="title">{{quote.title}}</a>
             <div class="content" v-html="quote.summary"></div>
@@ -26,7 +26,7 @@
           </article>
         </li>
       </ul>
-      <div class="x-page"><a v-on:click="onClick" target="_blank" id="J_page" data="1">点击查看更多</a></div>
+      <div class="x-page"><a @click="onClick" target="_blank" id="J_page" data="1">点击查看更多</a></div>
       <a style="bottom: 110px;" class="go-top"><i class="icon-circle-arrow-up"></i></a>
     </div>
     <footer class="footer">
@@ -79,7 +79,7 @@
     data () {
       return {
         quotes: '',
-        index: 0,
+        index: 1,
         alert: false,
         v_search: ''
       }

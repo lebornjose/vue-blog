@@ -50,7 +50,7 @@
     display: none;
   }
 
-  .own-active {
+  .router-link-active {
     background: #e17967;
     color: #fff !important;
   }
