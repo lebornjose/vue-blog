@@ -6,9 +6,13 @@ module.exports = {
   plugins: [
     'html'
   ],
+  'parserOptions': {
+    'ecmaVersion': 2017
+  },
   parser: 'vue-eslint-parser',
   // add your custom rules here
   'rules': {
+    'no-unused-vars': 'off',
     // allow paren-less arrow functions
     // allow debugger during development
     'linebreak-style': 0,
@@ -20,12 +24,6 @@ module.exports = {
     'generator-star-spacing': 0,
 // allow debugger during development
     'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
-    'no-unused-vars': [2, {
-// 允许声明未使用变量
-      'vars': 'local',
-// 参数不检查
-      'args': 'none'
-    }],
 // 关闭语句强制分号结尾
     'semi': [0],
 //空行最多不能超过100行

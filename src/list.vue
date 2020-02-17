@@ -13,24 +13,21 @@
   import Foot from './components/Foot1'
 
   export default {
-    components: {
-      Foot: Foot
-    },
     data () {
       return {
         articleList: ''
       }
     },
-    route: {
-      data: function () {
-        var categoryId = this.$route.params.categoryId
-        this.$http.get('/blog/home/jsonList/' + categoryId + '').then(function (response) {
-          this.articleList = response.data
-          console.log(response.data)
-        }, function (response) {
+    components: {
+      Foot: Foot
+    },
+    mounted () {
+      let categoryId = this.$route.params.categoryId
+      this.$http.get('/blog/home/jsonList/' + categoryId + '').then(function (response) {
+        this.articleList = response.data
+      }, function (response) {
 
-        })
-      }
+      })
     }
   }
 </script>

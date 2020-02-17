@@ -1,16 +1,19 @@
 <template>
   <footer class="footer">
     <div class="links">
-      <a v-for="(item, index)" :href="item.url" target="_blank">{{item.title}} </a>
+      <a v-for="(item, index) in blogList" :key="index" :href="item.url" target="_blank">{{item.title}} </a>
     </div>
-    <div class="copyright">© 2015 Super xing火星ICP备</div>
+    <div class="copyright">{{copy}}</div>
   </footer>
 </template>
 <script>
   export default {
-    computed () {
+    computed: {
       blogList: function () {
-        return this.$store.getters.getBlogList()
+        return this.$store.getters.getBlogList
+      },
+      copy: function () {
+        return this.$store.getters.getCopy
       }
     }
   }

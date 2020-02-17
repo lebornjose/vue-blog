@@ -1,8 +1,8 @@
 import Vue from 'vue'
-import Vuex from 'vuex'
 import VueResource from 'vue-resource'
 import App from './App'
 import router from './router'
+import store from './store'
 
 Vue.filter('date', function (value) {
   return new Date(parseInt(value.pubtime) * 1000).toLocaleString().substr(0, 9)
@@ -17,13 +17,13 @@ Vue.filter('photo', function (value) {
   return src
 })
 
-Vue.use(Vuex)
 Vue.use(VueResource)
 Vue.http.options.emulateJSON = true
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
   router,
+  store,
   components: {App},
   template: '<App/>'
 })

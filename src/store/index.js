@@ -8,11 +8,15 @@ let store = new Vuex.Store({
     blog: [{url: 'http://evilbinary.org/', title: '邪恶二进制'},
       {url: 'http://hyphenlee.github.io/', title: 'hyphen'},
       {url: 'https://coolshell.cn/', title: '酷壳'},
-      {url: 'https://www.zhihu.com/people/huang_xing', title: 'jose'}]
+      {url: 'https://www.zhihu.com/people/huang_xing', title: 'jose'}],
+    copyRight: '© 2015 Super xing火星ICP备'
   },
   getters: {
     getBlogList (state) {
       return state.blog
+    },
+    getCopy (state) {
+      return state.copyRight
     }
   }
 })

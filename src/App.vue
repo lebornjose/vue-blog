@@ -3,20 +3,20 @@
     <div class="x-qaq"><a href="index.html" class="cd">兴</a></div>
     <div class="x-nvabar x-nvabar-jianshu expanded">
       <div class="dropdown">
-        <router-link to='home' title="Super xing" class="active logo"><b>兴</b></router-link>
+        <router-link to='/home' title="Super xing" class="active logo"><b>兴</b></router-link>
       </div>
       <div class="x-menu">
         <ul class="items">
           <li class="menu-items-type">
-            <router-link to='about' title="关于Super xing"><i
+            <router-link to='/about' title="关于Super xing"><i
               class="icon-group"></i></router-link>
           </li>
           <li class="menu-items-tyoe">
-            <router-link to='cat' title="文章分类"><i
+            <router-link to='/cat' title="文章分类"><i
               class="icon-book"></i></router-link>
           </li>
           <li class="menu-items-type">
-            <router-link to='guest' title="留言板"><i
+            <router-link to='/guest' title="留言板"><i
               class="icon-comments"></i></router-link>
           </li>
           <li class="menu-items-type">
@@ -55,8 +55,3 @@
     color: #fff !important;
   }
 </style>
-<script>
-  export default {
-    props: ['homeTag', 'aboutTag', 'catTag', 'guestTag', 'productTag', 'detailTag']
-  }
-</script>

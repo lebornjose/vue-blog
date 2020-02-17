@@ -44,12 +44,12 @@ export default new Router({
       component: product
     },
     {
-      path: '/detail',
+      path: '/detail/:articleId',
       name: 'detail',
       component: detail
     },
     {
-      path: '/list',
+      path: '/list/:categoryId',
       name: 'list',
       component: list
     }

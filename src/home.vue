@@ -98,7 +98,7 @@
         })
       },
       golist: function (id) {
-        this.$route.router.go({path: '/detail/' + id})
+        this.$router.push({path: '/detail/' + id})
       }
     },
     mounted: function () {
