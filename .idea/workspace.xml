@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a1cccc80-3790-4a8d-bdd2-a0a980882752" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/about.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/about.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cat.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/cat.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/detail.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/detail.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guest.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/guest.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Foot.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Foot.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/home.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/list.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/list.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/product.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/product.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -84,19 +82,32 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1581769653285</updated>
-      <workItem from="1581769655925" duration="4034000" />
+      <workItem from="1581769655925" duration="4904000" />
+      <workItem from="1581905648499" duration="3257000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

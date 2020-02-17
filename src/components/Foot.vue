@@ -1,6 +1,17 @@
 <template>
   <footer class="footer">
-      <div class="links"> <a href="http://evilbinary.org/" target="_blank">邪恶二进制 </a><a href="http://hyphenlee.github.io/" target="_blank">hyphen</a><a href="http://www.blogbar.cc/" target="_blank">Blogbar</a><a href="http://coolshell.cn/" target="_blank">酷壳</a></div>
-      <div class="copyright">© 2015 Super xing火星ICP备001号</div>
+    <div class="links">
+      <a v-for="(item, index)" :href="item.url" target="_blank">{{item.title}} </a>
+    </div>
+    <div class="copyright">© 2015 Super xing火星ICP备</div>
   </footer>
 </template>
+<script>
+  export default {
+    computed () {
+      blogList: function () {
+        return this.$store.getters.getBlogList()
+      }
+    }
+  }
+</script>

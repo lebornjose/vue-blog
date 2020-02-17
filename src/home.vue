@@ -29,12 +29,7 @@
       <div class="x-page"><a @click="onClick" target="_blank" id="J_page" data="1">点击查看更多</a></div>
       <a style="bottom: 110px;" class="go-top"><i class="icon-circle-arrow-up"></i></a>
     </div>
-    <footer class="footer">
-      <div class="links"><a href="http://evilbinary.org/" target="_blank">邪恶二进制 </a><a
-        href="http://hyphenlee.github.io/" target="_blank">hyphen</a><a href="http://www.blogbar.cc/" target="_blank">Blogbar</a><a
-        href="http://coolshell.cn/" target="_blank">酷壳</a></div>
-      <div class="copyright">© 2015 Super xing火星ICP备001号</div>
-    </footer>
+    <Foot></Foot>
     <model v-show="alert"></model>
   </div>
 </template>
@@ -59,6 +54,7 @@
 </style>
 <script>
   import model from './components/model'
+  import Foot from './components/Foot'
   import $ from 'jquery'
 
   $(window).scroll(function () {
@@ -74,7 +70,8 @@
   })
   export default {
     components: {
-      model: model
+      model: model,
+      Foot: Foot
     },
     data () {
       return {
