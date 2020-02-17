@@ -57,17 +57,6 @@
   import Foot from './components/Foot'
   import $ from 'jquery'
 
-  $(window).scroll(function () {
-    if ($(this).scrollTop() > 100) {
-      $('.go-top').css({
-        bottom: '110px'
-      })
-    } else {
-      $('.go-top').css({
-        bottom: '-110px'
-      })
-    }
-  })
   export default {
     components: {
       model: model,
@@ -83,18 +72,18 @@
     },
     methods: {
       onClick: function () {
-        this.$http.get('/blog/home/page/' + this.index).then(function (response) {
+        let page = this.$store.getters.getIndex
+        this.$http.get('/blog/home/page/' + page).then(function (response) {
           if (response.data.length > 0) {
             this.quotes = this.quotes.concat(response.data)
-            this.index++
+            page++
+            this.$store.commit('next', page)
           } else {
             this.alert = true
             setTimeout(() => {
               this.alert = false
             }, 2000)
           }
-        }, function (response) {
-          console.log(response.data)
         })
       },
       golist: function (id) {
@@ -102,6 +91,17 @@
       }
     },
     mounted: function () {
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+          $('.go-top').css({
+            bottom: '110px'
+          })
+        } else {
+          $('.go-top').css({
+            bottom: '-110px'
+          })
+        }
+      })
       let self = this
       self.$http.get('/blog/home/page').then(function (response) {
         this.quotes = response.data

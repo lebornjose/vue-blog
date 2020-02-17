@@ -9,7 +9,8 @@ let store = new Vuex.Store({
       {url: 'http://hyphenlee.github.io/', title: 'hyphen'},
       {url: 'https://coolshell.cn/', title: '酷壳'},
       {url: 'https://www.zhihu.com/people/huang_xing', title: 'jose'}],
-    copyRight: '© 2015 Super xing火星ICP备'
+    copyRight: '© 2015 Super xing火星ICP备',
+    page: 1 // 首页分页
   },
   getters: {
     getBlogList (state) {
@@ -17,6 +18,14 @@ let store = new Vuex.Store({
     },
     getCopy (state) {
       return state.copyRight
+    },
+    getIndex (state) {
+      return state.page
+    }
+  },
+  mutations: {
+    next (state, val) {
+      state.page = val
     }
   }
 })
