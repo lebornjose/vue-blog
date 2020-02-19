@@ -7,13 +7,13 @@ module.exports = {
     index: path.resolve(__dirname, '../dist/index.html'),
     assetsRoot: path.resolve(__dirname, '../dist'),
     assetsSubDirectory: 'static',
-    assetsPublicPath: '/',
+    assetsPublicPath: 'https://xinblog.oss-cn-qingdao.aliyuncs.com/',
     productionSourceMap: true
   },
   dev: {
     env: require('./dev.env'),
     port: 8000,
-    proxyTable: {'/blog':'http://www.leborn.me'},
+    proxyTable: {'/blog': 'http://www.leborn.me'},
     useEslint: false
   }
 }

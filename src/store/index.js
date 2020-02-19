@@ -8,7 +8,8 @@ let store = new Vuex.Store({
     blog: [{url: 'http://evilbinary.org/', title: '邪恶二进制'},
       {url: 'http://hyphenlee.github.io/', title: 'hyphen'},
       {url: 'https://coolshell.cn/', title: '酷壳'},
-      {url: 'https://www.zhihu.com/people/huang_xing', title: 'jose'}],
+      {url: 'https://www.zhihu.com/people/huang_xing', title: 'jose'},
+      {url: 'https://iizhi.cn/', title: '子衿'}],
     copyRight: '© 2015 Super xing火星ICP备',
     page: 1 // 首页分页
   },

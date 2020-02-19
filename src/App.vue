@@ -23,7 +23,8 @@
             <router-link to='/product' title="推荐"><i
               class="icon-move"></i></router-link>
           </li>
-          <li class="menu-items-type"><a href="#" title="订阅"><i class="icon-magic"></i></a></li>
+          <li class="menu-items-type"><a href="http://www.leborn.me/blog/home/music" title="音乐"><i
+            class="icon-film"></i></a></li>
         </ul>
       </div>
     </div>
